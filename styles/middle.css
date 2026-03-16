@@ -1,0 +1,241 @@
+  .top-img{
+    width: inherit;
+    position: relative;
+  }
+  .top-post{
+    width: 80%;
+    margin-bottom: -5px;
+    z-index: 2;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+  
+  .cutout1{
+    width: 80%;
+    background-color: transparent;
+    position: absolute;
+    left:0 ;
+    top: 0;
+    opacity: 0 ;
+  }
+
+  .cutout2{
+    width: inherit;
+    background-color: transparent;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    transition: 1.3s ease-in-out;
+  }
+
+  .cutout2:hover
+  {
+    content: '';
+    opacity: 1;
+    transform: scale(1.02) translateY(-10px);
+  }
+
+  .bottom-img{
+    width: inherit;
+    position: absolute;
+    margin-top: 530px;
+  }
+
+  .bottom-post{
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  .middle-box{
+    background-color: var(--kibla);
+    width: inherit;
+    height: 265px;
+    padding-top:9px;
+    margin-top: -269px;
+    position:relative;
+    color: #fff;
+  }
+  
+  .middle-box-2{
+    background-color: var(--kibla);
+    width: inherit;
+    height: 265px;
+    padding-top:9px;
+    margin-top: 269px;
+    position:relative;
+    color: #fff;
+  }
+
+
+  .story{
+    width: 4%;
+    background-color: black;
+    margin-left: -25px;
+    margin-bottom: -3px;
+  }
+
+  .story2{
+    height: 20px;
+    margin-bottom: -5 px;
+    margin-left: 15px;
+
+  }
+
+  .interactions{
+    align-items: center;
+  }
+
+  .ent-repost{
+    height: 27px;
+  }
+
+  .ent-share{
+    height: 21px;
+  }
+
+  .ent-save{
+    height: 32px;
+    margin-left: 15px;
+  }
+
+  .entities{
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 3px;
+  }
+
+  .interactions{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .user-comment{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: inline-block;
+  }
+  .another-user-comment{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: inline-block;
+  }
+  .user-acc{
+    font-weight: bolder;
+    font-size: 15px;
+  }
+
+  .user-profile{
+    height: 50px;
+    border-radius: 55px;
+    border-style: solid;
+    border-color: rgb(4, 247, 32);
+  }
+
+  .verified{
+    height: 15px;
+  }
+
+  .some-user-acc{
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .msc{
+    height: 15px;
+  }
+
+  .some-user-comment{
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .duration{
+    padding-left: 40px;
+    padding-top: 4px;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(176, 172, 172);
+  }
+
+  .translation{
+    font-weight: 800;
+    color: #fff;
+    font-size: medium;
+    padding-left: 14px;
+  }
+
+  .next-post-header{
+    padding-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    padding-right: 10px;
+    width: inherit;
+    justify-content: space-evenly;
+  }
+
+  .user-profile
+  {
+    margin-left: -30px;
+  }
+
+  .some-other-user-acc{
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    margin-left: -40px;
+  }
+
+  .music{
+    font-size: medium;
+    font-weight: 400;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .follow{
+    margin-left: -70px;
+    margin-right: 1px;
+    width: 95px;
+    height: 30px;
+    margin-top: -5px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: rgb(0, 153, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    border-color: blue;
+  }
+
+  .follow:hover
+  {
+    content: '';
+    transform: scale(1.2);
+    transition: 0.8s;
+  }
+
+  .menu{
+    margin-left: -10px;
+    margin-top:-5px;
+    cursor: pointer;
+  }
+
+  .back-img
+  {
+    position: absolute;
+    justify-self: center;
+    transform: scale(1.3);
+    width: 100%;
+  }

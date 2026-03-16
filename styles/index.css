@@ -1,0 +1,223 @@
+.b1dy
+{
+  background-color: black;
+  margin: 0;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+input
+{
+  display: none;
+}
+
+.cotainer
+{
+  width: 100px;
+  height: 100px;
+  max-width: 400px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.cards
+{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards label
+{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+
+.cards .card 
+{
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient( orange,rgb(255, 0, 208));
+  backdrop-filter: blur(4px) saturate(150%);
+  border-radius: 30px;
+  padding: 30px 35px;
+  border: 1px solid silver;
+}
+
+.cards .image
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .image img
+{
+  border-radius: 15px;
+  box-shadow: 15px 15px 40px rgba(0, 0,0, 50%);
+  margin-top: 23px;
+  margin-left: 29px;
+  width: 86%;
+  height  : 100px; 
+  object-fit: cover;
+  transition: all .7s;
+}
+
+.cards .image img:hover
+{
+  transform: scale(1.05);
+  border-radius: 20px;
+}
+
+.cards .image .dots
+{
+  text-align: center;
+}
+
+.dots div
+{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  margin-left: 20px;
+}
+
+.dots div:nth-child(1)
+{
+  background-color:black;
+} 
+
+.dots div:nth-child(2)
+{
+  background-color:red;
+} 
+
+.dots div:nth-child(3)
+{
+  background-color:greenyellow;
+} 
+
+.card .infos
+{
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.card .infos span 
+{
+  display: block;
+  align-items: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+.card .infos span:hover
+{
+  content: '';
+  color: azure;
+  transition: 0.4s ease-in-out;
+  text-shadow: 2px 6px 16px black;
+  letter-spacing: 5px;
+
+}
+
+.card .actions
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  color: #fff;
+}
+
+
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2, 
+#s5:checked~.cards #slide3{
+
+  box-shadow: 0 15px 30px #ffffff30;
+  transform: translate3d(-80%, 0, -220px);
+  --current-color1:#fff;
+  --curent-color2:#404457;
+}
+ 
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3, 
+#s5:checked~.cards #slide4{
+
+  box-shadow: 0 20px 40px #ffffff30;
+  transform: translate3d(-40%, 0, -120px);
+  --current-color1:#fff;
+  --curent-color2:#404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4, 
+#s5:checked~.cards #slide5{
+
+  box-shadow: 0 25px 50px  #ffffff30;
+  transform: translate3d(0, 0, 0);
+  --current-color1:yellow;
+  --curent-color2:#fff;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5, 
+#s5:checked~.cards #slide1{
+
+  box-shadow: 0 20px 40px  #ffffff30;
+  transform: translate3d(40%, 0, -120px);
+  --current-color1:#fff;
+  --curent-color2:#404457;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide4, 
+#s5:checked~.cards #slide1{
+
+  box-shadow: 0 15px 30px  #ffffff30;
+  transform: translate3d(80%, 0, -280px);
+  --current-color1:#fff;
+  --curent-color2:#404457;
+}
